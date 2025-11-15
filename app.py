@@ -74,7 +74,7 @@ if st.button("📄 Gerar PDF do Briefing"):
     pdf.ln(10)
 
     for question, answer in responses.items():
-        pdf.multi_cell(0, 10, txt=f"{question}
+        pdf.multi_cell(0, 10, txt=f"{question}\nResposta: {answer}\n")
 Resposta: {answer}
 ")
 
